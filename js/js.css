@@ -1,0 +1,54 @@
+:root {
+    --grid-cols: 0;
+    --grid-rows: 1;
+  }
+
+  #Main-Container
+  {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      overflow: auto;
+  }
+ 
+  #Form-Section{
+      display: grid;
+      grid-template-rows: 1fr 1fr 1rf;
+      grid-template-columns: 1fr 1fr;
+  }
+  #Rule-Row
+  {
+      grid-column-start: span 2;
+  }
+
+  #Rule-Row
+  {
+    flex-direction: row-reverse;
+  }
+
+
+#h2,h1
+{
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+  
+}
+#h1, h2{
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+}
+  #Section-Container 
+  {
+    display: grid;
+    grid-template-rows: repeat( var( --grid-rows ), 1fr );
+    grid-template-columns: repeat( var( --grid-cols), 1fr );
+    min-width: 400px;
+    min-height: 400px;
+    margin: 1em;
+  }
+  .grid-item 
+  {
+    padding: 0.6em;
+    border: 0.5px solid gray;
+    text-align: center;
+    font-size: 0.5em;
+  }
